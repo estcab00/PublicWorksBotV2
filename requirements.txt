@@ -1,15 +1,14 @@
+# Para restaurar distutils en Python 3.12
 setuptools>=65.0.0
-streamlit==1.37.1
-python-dotenv==1.0.1
-pytesseract==0.3.8
-# streamlit>=1.20
+
+# Streamlit
+streamlit>=1.20
+
+# OpenAI
 openai>=1.0.0
+
+# Gestión de variables de entorno
 python-dotenv
-PyPDF2
-langchain>=0.0.278   # si sigues usando LangChain
-scikit-learn
-langgraph            # si sigues usando LangGraph
-opencv-python-headless
 
 # PDF → texto/imágenes
 PyPDF2
@@ -23,6 +22,18 @@ Pillow
 pandas
 numpy
 scikit-learn
+
+# Visualización
+matplotlib
+
+# Visión por computador
+opencv-python-headless
+
+# LangChain y extensiones
+langchain>=0.0.278
+langchain-openai         # ChatOpenAI :contentReference[oaicite:1]{index=1}
+langchain-core           # abstracciones base :contentReference[oaicite:2]{index=2}
+langgraph
 
 # Interactivo (si usas IPython.display)
 ipython
