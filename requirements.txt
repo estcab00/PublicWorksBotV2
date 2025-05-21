@@ -9,3 +9,4 @@ PyPDF2
 langchain>=0.0.278   # si sigues usando LangChain
 scikit-learn
 langgraph            # si sigues usando LangGraph
+opencv-python-headless
