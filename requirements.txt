@@ -1,5 +1,6 @@
 
 pytesseract==0.3.8
+distutils
 streamlit>=1.20
 openai>=1.0.0
 python-dotenv
