@@ -1,5 +1,17 @@
-# Para que Python incluya distutils
+# Python stdlib extras
 python3-distutils
+python3-dev
 
-# Datos de idioma español
+# Compilación de extensiones
+build-essential
+
+# OCR
+tesseract-ocr
 tesseract-ocr-spa
+
+# Soporte de imágenes (si usas Pillow u otras librerías)
+libjpeg-dev
+zlib1g-dev
+
+# Cliente MySQL (si usas mysqlclient)
+default-libmysqlclient-dev
