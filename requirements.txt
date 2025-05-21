@@ -1,7 +1,7 @@
 streamlit==1.37.1
 python-dotenv==1.0.1
 pytesseract==0.3.8
-streamlit>=1.20
+# streamlit>=1.20
 openai>=1.0.0
 python-dotenv
 PyPDF2
