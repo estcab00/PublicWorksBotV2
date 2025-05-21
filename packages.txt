@@ -1,0 +1,5 @@
+# Para que Python incluya distutils
+python3-distutils
+
+# Datos de idioma español
+tesseract-ocr-spa
