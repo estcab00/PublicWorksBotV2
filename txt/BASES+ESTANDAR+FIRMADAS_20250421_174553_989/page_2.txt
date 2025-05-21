@@ -1,0 +1,87 @@
+SIMBOLOGÍA UTILIZADA:
+
+Símbolo Descripción
+
+[ABC] / [ La información solicitada dentro de los corchetes sombreados debe ser
+completada por la Entidad durante la elaboración de las bases.
+
+Es una indicación, o información que deberá ser completada por la
+LABC] / [ Entidad con posterioridad al otorgamiento de la buena pro para el caso
+
+específico de la elaboración de la PROFORMA DEL CONTRATO; o por los
+proveedores, en el caso de los ANEXOS de la oferta.
+
+Importante Se refiere a consideraciones importantes a tener en cuenta por el órgano
+— - encargado de las contrataciones o comité de selección, según corresponda
+y por los proveedores.
+
+* Abc
+
+Advertencia Se refiere a advertencias a tener en cuenta por el órgano encargado de
+las contrataciones o comité de selección, según corresponda y por los
+proveedores.
+
+» Abc
+
+Importante para la Entidad Se refiere a consideraciones importantes a tener en cuenta por el órgano
+encargado de las contrataciones o comité de selección, según corresponda
+* Xy7 y deben ser eliminadas una vez culminada la elaboración de las bases.
+
+CARACTERÍSTICAS DEL DOCUMENTO:
+
+Las bases estándar deben ser elaboradas en formato WORD, y deben tener las siguientes características:
+
+N* | Característic Parámetros
+————
+
+Superior :2.5 cm Inferior: 2.5 cm
+
+Márgenes Izquierda: 2.5 cm Derecha: 2.5 cm
+
+Fuente Arial
+
+Normal: Para el contenido en general
+Estilo de Fuente Cursiva: Para el encabezado y pie de página
+Para las Consideraciones importantes (Item 3 del cuadro anterior)
+
+Automático: Para el contenido en general
+
+Color de Fuente Azul : Para las Consideraciones importantes (ltem 3 del cuadro anterior)
+
+16 : Para las dos primeras hojas de las Secciones General y Específica
+11 : Para el nombre de los Capítulos.
+10 : Para el cuerpo del documento en general
+9 : Para el encabezado y pie de página
+Para el contenido de los cuadros, pudiendo variar, según la necesidad
+8 : Para las Notas al pie
+
+Tamaño de Letra
+
+Justificada: Para el contenido en general y notas al pie.
+Alineación Centrada : Para la primera página, los títulos de las Secciones y nombres
+de los Capitulos)
+
+Interlineado Sencillo
+
+Anterior :0
+
+Posterior : O
+
+Para los nombres de las Secciones y para resaltar o hacer hincapié en algún
+concepto
+
+Espaciado
+
+Subrayado
+
+INSTRUCCIONES DE USO:
+
+Una vez registrada la información solicitada dentro de los corchetes sombreados en gris, el texto deberá
+quedar en letra tamaño 10, con estilo normal, sin formato de negrita y sin sombrear.
+
+La nota IMPORTANTE no puede ser modificada ni eliminada en la Sección General. En el caso de la Sección
+Específica debe seguirse la instrucción que se indica en dicha nota.
+
+Elaboradas en enero de 2019
+Modificadas en marzo, junio y diciembre 2019, julio 2020, julio y diciembre 2021, junio y octubre de 2022
+

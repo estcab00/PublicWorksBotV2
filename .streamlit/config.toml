@@ -1,0 +1,18 @@
+[theme]
+# Primary accent color for interactive elements
+primaryColor = "#2a5298"  # Matches the midpoint of the gradient for consistency
+
+# Background color for the main content area (serves as a fallback for unsupported custom CSS)
+backgroundColor = "#1e3c72"  # Matches the starting point of the gradient
+
+# Background color used for the sidebar and interactive widgets
+secondaryBackgroundColor = "#25306c"  # Light sky blue from the gradient end
+
+# Color used for all text
+textColor = "#ffffff"  # White text for high contrast on dark or vibrant backgrounds
+
+# Font (optional: uncomment and use a custom Google Font)
+# font = "sans serif"
+
+[client]
+toolbarMode = "minimal"
