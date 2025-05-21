@@ -10,3 +10,19 @@ langchain>=0.0.278   # si sigues usando LangChain
 scikit-learn
 langgraph            # si sigues usando LangGraph
 opencv-python-headless
+
+# PDF → texto/imágenes
+PyPDF2
+pdf2image
+
+# OCR
+pytesseract==0.3.8
+Pillow
+
+# Datos y ML
+pandas
+numpy
+scikit-learn
+
+# Interactivo (si usas IPython.display)
+ipython
