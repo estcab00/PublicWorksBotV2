@@ -175,3 +175,6 @@ cython_debug/
 
 # dotenv
 .env
+
+# Streamlit secrets (no subir nunca)
+.streamlit/secrets.toml

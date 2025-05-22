@@ -8,6 +8,7 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 import pandas as pd
 import numpy as np
 import cv2
+import matplotlib.pyplot as plt
 from pytesseract import Output
 import re
 import glob

@@ -1,9 +1,9 @@
 
 import os, re, json, openai
+from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 from dotenv import load_dotenv
-
-from openai import OpenAI
+from openai import OpenAI, OpenAIError, APIConnectionError
 import os
 
 load_dotenv()  # sólo en desarrollo local

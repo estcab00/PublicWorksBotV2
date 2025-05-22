@@ -4,6 +4,12 @@ import tempfile
 import streamlit as st
 import shutil 
 import glob
+import openai
+import sys
+from dotenv import load_dotenv
+
+load_dotenv()  # sólo en desarrollo local
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 from utils import (
     pdf_to_text,
@@ -42,6 +48,17 @@ def process_pdf_file(uploaded_file):
     with open(path, "wb") as f:
         f.write(uploaded_file.read())
     return path
+
+if not openai.api_key:
+    st.error("❌ OPENAI_API_KEY no encontrada en el entorno.")
+    sys.exit(1)
+
+try:
+    # viejo: openai.Model.list()
+    openai.models.list()
+except Exception as e:
+    st.error(f"❌ No pude conectar con la API de OpenAI: {e}")
+    sys.exit(1)
 
 def main():
     st.title("💬 Chatea con un contrato público")
