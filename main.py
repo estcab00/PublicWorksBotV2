@@ -145,11 +145,11 @@ def main():
         st.session_state["chunks"] = chunks
 
         # 3) Detectar distrito a partir de todo el texto concatenado
-        # full_text = "\n\n".join(filter(None, all_text))
-        # detected = detect_district_from_text(full_text)
-        # st.session_state["detected_district"] = detected or "el distrito correspondiente"
+        full_text = "\n\n".join(filter(None, all_text))
+        detected = detect_district_from_text(full_text)
+        st.session_state["detected_district"] = detected or "el distrito correspondiente"
 
-        #st.success(f"📄 Generados {len(chunks)} chunks.")
+        st.success(f"📄 Generados {len(chunks)} chunks.")
         #st.info(f"🔍 Distrito detectado: **{st.session_state['detected_district']}**")
 
     # 4) UI de conversación
