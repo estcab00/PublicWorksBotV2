@@ -78,16 +78,16 @@ def main():
         raw_text = pdf_to_text(pdf_path)
         if len(raw_text.strip()) < 50:
             #  → PDF probablemente escaneado: convertir a JSON con OCR
-            st.warning(f"🖨️ El archivo **{pdf.name}** parece escaneado. Aplicando OCR...")
+            st.warning(f"🖨️ El archivo **{pdf.name}** parece escaneado. Vamos a aplicar OCR para leerlo...")
             status = st.empty()
 
             # Paso 1: convertir a imágenes
-            status.text("1/3: Convirtiendo PDF a imágenes…")
+            status.info("1/3: Convirtiendo PDF a imágenes…")
             output_img_base = "img/"
             convert_pdf_to_images(pdf_path, output_img_base)
 
             # Paso 2: OCR de las imágenes
-            status.text("2/3: Aplicando OCR a imágenes…")
+            status.info("2/3: Aplicando OCR a imágenes…")
             img_folder = os.path.join(
                 output_img_base,
                 os.path.splitext(os.path.basename(pdf_path))[0]
@@ -96,7 +96,7 @@ def main():
             convert_files_to_text(img_folder, output_txt_base, lang="spa")
 
             # Paso 3: generar JSON
-            status.text("3/3: Creando JSON…")
+            status.info("3/3: Creando JSON…")
             output_json_base = "json/"
             create_json_per_folder(output_txt_base, output_json_base, chunk_size=1600)
 
@@ -107,8 +107,8 @@ def main():
             this_json = os.path.join(JSON_DIR, f"{stem}.json")
 
             # <-- Aquí añadimos el st.write para indicar qué JSON leemos -->
-            st.write(f"🔄 Leyendo chunks desde el JSON correspondiente a **{pdf.name}**:")
-            st.write(f"    {os.path.basename(this_json)}")
+            st.info(f"🔄 Leyendo chunks desde el JSON correspondiente a **{pdf.name}**:")
+            st.info(f"🔍 Información utilizada correspondiente a {os.path.basename(this_json)}")
 
             with open(this_json, "r", encoding="utf-8") as jf:
                 ocr_chunks = json.load(jf)
@@ -125,6 +125,7 @@ def main():
             # all_text.append("")
 
         else:
+            st.write(f"🔄 Leyendo texto desde el PDF correspondiente a **{pdf.name}**:")
             #  → PDF con texto: chunkear directamente
             all_text.append(raw_text)
             chunks.extend(chunk_text(raw_text))
@@ -144,12 +145,12 @@ def main():
         st.session_state["chunks"] = chunks
 
         # 3) Detectar distrito a partir de todo el texto concatenado
-        full_text = "\n\n".join(filter(None, all_text))
-        detected = detect_district_from_text(full_text)
-        st.session_state["detected_district"] = detected or "el distrito correspondiente"
+        # full_text = "\n\n".join(filter(None, all_text))
+        # detected = detect_district_from_text(full_text)
+        # st.session_state["detected_district"] = detected or "el distrito correspondiente"
 
-        st.success(f"📄 Generados {len(chunks)} chunks.")
-        st.info(f"🔍 Distrito detectado: **{st.session_state['detected_district']}**")
+        #st.success(f"📄 Generados {len(chunks)} chunks.")
+        #st.info(f"🔍 Distrito detectado: **{st.session_state['detected_district']}**")
 
     # 4) UI de conversación
     if "chunks" in st.session_state:
